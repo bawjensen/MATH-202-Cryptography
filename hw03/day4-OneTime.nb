@@ -1,0 +1,794 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     30093,        785]
+NotebookOptionsPosition[     27866,        718]
+NotebookOutlinePosition[     28252,        735]
+CellTagsIndexPosition[     28209,        732]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Day 3: Conversions", "Title",
+ CellChangeTimes->{{3.6188615279729967`*^9, 3.618861538581737*^9}},
+ TextAlignment->Center],
+
+Cell[TextData[{
+ "We begin with using ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " to convert a string of our usual alphanumeric symbols into their ASCII \
+codes. (There are ASCII tables linked from my webpage, or a quick search will \
+turn up others that you may prefer.) The command is ",
+ StyleBox["ToCharacterCode[\[OpenCurlyDoubleQuote]string\
+\[CloseCurlyDoubleQuote]]",
+  FontWeight->"Bold"],
+ ", where \[OpenCurlyQuote]",
+ StyleBox["string\[CloseCurlyQuote] ",
+  FontSlant->"Italic"],
+ "is what you\[CloseCurlyQuote]re interested in converting.\n\n*****This is \
+very important! To get ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " to execute commands, you must either (a) hit the \[OpenCurlyQuote]Enter\
+\[CloseCurlyQuote] button on the keypad; or, more likely, (b) hit \
+\[OpenCurlyQuote]Shift\[CloseCurlyQuote] + \[OpenCurlyQuote]Return\
+\[CloseCurlyQuote] at the same time. Otherwise, it just is a carriage \
+return.*****\n\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618861567006242*^9, 3.6188616227605343`*^9}, {
+  3.618861751334124*^9, 3.618861950366992*^9}, {3.6188621762068243`*^9, 
+  3.6188621883401337`*^9}, {3.6188622416134977`*^9, 3.6188622730673933`*^9}, {
+  3.6188623727897053`*^9, 3.618862373461512*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ToCharacterCode", "[", 
+  "\"\<This is a test. Mathematica thinks of anything between a pair of \
+quotation marks as a string. An interesting question is: How do you include a \
+quotation mark without having it be seen as the end of a string?\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.618842567902454*^9, 3.618842655505062*^9}, 
+   3.6188428117871943`*^9, {3.61884286599505*^9, 3.618842871113866*^9}}],
+
+Cell[TextData[{
+ "\n\nNote that the output above ^^^ is the list we want. Being contained in \
+curly braces \[OpenCurlyQuote]{\[OpenCurlyQuote] and \[OpenCurlyQuote]}\
+\[CloseCurlyQuote] is the mark of being a list.\n\nNext, we want to be able \
+to return the list of ASCII integers to the string of alphanumeric symbols. \
+The command we need is ",
+ StyleBox["FromCharacterCode[\[OpenCurlyQuote]list of integers\
+\[CloseCurlyQuote]]",
+  FontWeight->"Bold"],
+ " and you should notice that I did something else in the line below. Rather \
+than cut-and-paste the list, I used the symbol \[OpenCurlyQuote]%\
+\[CloseCurlyQuote], which means \[OpenCurlyQuote]put in the previous output \
+as the input.\[CloseCurlyQuote] It\[CloseCurlyQuote]s a convenient trick, \
+although like most tricks, not without its pitfalls: It will always take the \
+last output and use it as input. If you\[CloseCurlyQuote]ve done something \
+else since, it will just add that output, not the one you hoped for. We\
+\[CloseCurlyQuote]ll see another way of handling soon.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.6188623110107193`*^9, 3.6188623371121883`*^9}, {
+  3.618862368500721*^9, 3.618862504729096*^9}, {3.618862539159101*^9, 
+  3.618862592644808*^9}, {3.618863145004414*^9, 3.618863193730063*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.6188427567524033`*^9, 3.618842799353634*^9}, 
+   3.618842846432431*^9}],
+
+Cell[TextData[{
+ "\n\nSuccess! It took the list of integers and returned the sentence we \
+began with. Next, I\[CloseCurlyQuote]m going to ",
+ StyleBox["compose",
+  FontSlant->"Italic"],
+ " another command outside of the ",
+ StyleBox["ToCharacterCode",
+  FontWeight->"Bold"],
+ ". This command, ",
+ StyleBox["BaseForm[{list}, n]",
+  FontWeight->"Bold"],
+ ", will convert a list of integers to base n. We\[CloseCurlyQuote]ll first \
+put the message into their ASCII integers, then change all of those to base \
+2, to binary expressions, which are also in this context known as ",
+ StyleBox["bytes",
+  FontSlant->"Italic"],
+ ". ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " very helpfully adds a subscript to show which base the expression is in.\n\
+\n"
+}], "Text",
+ CellChangeTimes->{{3.61886260902942*^9, 3.618862791866495*^9}, {
+  3.618862875278482*^9, 3.618862908170904*^9}, {3.618908094369536*^9, 
+  3.618908095204691*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{
+   RowBox[{
+   "ToCharacterCode", "[", 
+    "\"\<This is a test. Mathematica thinks of anything between a pair of \
+quotation marks as a string. An interesting question is: How do you include a \
+quotation mark without having it be seen as the end of a string?\>\"", "]"}], 
+   " ", ",", " ", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.61884299352526*^9, 3.61884301504211*^9}}],
+
+Cell[TextData[{
+ "\n\nA nice feature of ",
+ StyleBox["BaseForm",
+  FontWeight->"Bold"],
+ " is that one may directly convert from any base to any other. We\
+\[CloseCurlyQuote]ll be using hexadecimal, base 16, later in the course when \
+we learn about the Rijndael encryption system, so below I use the command \
+again to directly convert the bytes into a hexidecimal expression. (Also, \
+there\[CloseCurlyQuote]s an especially nice relation between hexidecimal and \
+binary expressions of bytes that we discussed in class.)\n\nNotice that again \
+we used the shortcut of the \[OpenCurlyQuote]%\[CloseCurlyQuote] to \
+immediately channel the previous output into the command.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618862937344491*^9, 3.618863068628368*^9}, {
+  3.618863117090125*^9, 3.6188631351238537`*^9}, {3.618863208435093*^9, 
+  3.618863213960127*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{"%", ",", "16"}], "]"}]], "Input",
+ CellChangeTimes->{{3.618843059184451*^9, 3.618843071566621*^9}}],
+
+Cell[TextData[{
+ "\n\nAnd now, we\[CloseCurlyQuote]ll use the ",
+ StyleBox["BaseForm",
+  FontWeight->"Bold"],
+ " command again to convert the hexadecimal expressions back to base ten.\n\n\
+"
+}], "Text",
+ CellChangeTimes->{{3.6188632429593143`*^9, 3.618863267131502*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{"%", ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.618843083733226*^9, 3.618843093063258*^9}}],
+
+Cell[TextData[{
+ "\n\nFinally, again, we\[CloseCurlyQuote]ll convert it back to alphanumeric \
+symbols using the ",
+ StyleBox["FromCharacterCode",
+  FontWeight->"Bold"],
+ " command.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618863283156955*^9, 3.6188633111467867`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.6188431171831713`*^9, 3.618843123820977*^9}}],
+
+Cell[TextData[{
+ "\n\n\nAnother very useful feature of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is that you may name things, and then use the name as a substitute rather \
+than cutting-and-pasting or relying on the \[OpenCurlyQuote]%\
+\[CloseCurlyQuote] trick. Below, I use \[OpenCurlyQuote]",
+ StyleBox["Plaintext1 = ",
+  FontSlant->"Italic"],
+ "\[CloseCurlyQuote]",
+ StyleBox[" ",
+  FontSlant->"Italic"],
+ " to name the string of alphanumeric symbols we\[CloseCurlyQuote]ve been \
+using.\n\n***** An important point. Using a colon \[OpenCurlyQuote] : \
+\[CloseCurlyQuote] tells ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " that the thing being named is a ",
+ StyleBox["variable",
+  FontSlant->"Italic"],
+ ". It\[CloseCurlyQuote]s different to name a function. \
+We\[CloseCurlyQuote]ll get to that later in the course. *****\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618863338959516*^9, 3.61886344300908*^9}, {
+  3.618909916503461*^9, 3.618909940727034*^9}, {3.618910422586977*^9, 
+  3.618910518608651*^9}, {3.618910572479376*^9, 3.618910573391275*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Plaintext1", " ", "=", 
+  "\"\<This is a test. Mathematica thinks of anything between a pair of \
+quotation marks as a string. An interesting question is: How do you include a \
+quotation mark without having it be seen as the end of a string?\>\""}]], \
+"Input",
+ CellChangeTimes->{{3.618843464046068*^9, 3.61884352046767*^9}, {
+   3.6188435684831657`*^9, 3.6188435710888863`*^9}, 3.618909886146072*^9}],
+
+Cell[TextData[{
+ "\n\nNow, we\[CloseCurlyQuote]ll use the command ",
+ StyleBox["ToCharacterCode",
+  FontWeight->"Bold"],
+ " on the name ",
+ StyleBox["Plaintext1",
+  FontSlant->"Italic"],
+ " to execute the same conversion as above.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.6188634627293158`*^9, 3.618863462927855*^9}, {
+  3.6188635774709063`*^9, 3.618863649684445*^9}, {3.618908231681118*^9, 
+  3.6189082465767193`*^9}, {3.618922203464615*^9, 3.618922204320532*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ToCharacterCode", "[", "Plaintext1", "]"}]], "Input",
+ CellChangeTimes->{{3.618843533874406*^9, 3.6188435435442944`*^9}, {
+  3.6188435739167757`*^9, 3.6188435769919024`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+
+Day 4: One-Time Pads\
+\>", "Title",
+ CellChangeTimes->{{3.618863737526505*^9, 3.618863763026473*^9}, {
+  3.618863832672114*^9, 3.61886383301937*^9}},
+ TextAlignment->Center],
+
+Cell[TextData[{
+ "\n\nAnother nice feature of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is that allows mathematical operations to be done \[OpenCurlyQuote]all at \
+one\[CloseCurlyQuote] to a list. We\[CloseCurlyQuote]re going to take our \
+alphanumeric string, convert it to ASCII integers, then (just for the sake of \
+this example) add 100 from each ASCII integer, with the result that every \
+number on the new list is between 100 and 255. \n\nIf we were actually \
+transmitting a cipherstream then each alphanumeric character would be \
+represented by three digits. (There are easy ways to do this dropping down to \
+only two digits, and for that matter, since we\[CloseCurlyQuote]re sending it \
+as a list with each entry separated by a comma, ",
+ StyleBox["Mathematica ",
+  FontSlant->"Italic"],
+ "wouldn\[CloseCurlyQuote]t have trouble doing the operations. In real life, \
+though, cipherstreams used to be sent in blocks of five digits.)\n\nThe \
+command ",
+ StyleBox["ToCharacterCode[",
+  FontWeight->"Bold"],
+ StyleBox["Plaintext1",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ " again converts to a list of ASCII integers, and then with one stroke, we \
+add 100 from every number on the list. Pretty sweet.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618863671079912*^9, 3.618863703883995*^9}, {
+  3.6188638555885353`*^9, 3.6188639610812807`*^9}, {3.6188640170841513`*^9, 
+  3.618864085303351*^9}, {3.618921504944573*^9, 3.6189216775419064`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ToCharacterCode", "[", "Plaintext1", "]"}], " ", "+", " ", 
+  "100"}]], "Input",
+ CellChangeTimes->{{3.618921681287183*^9, 3.6189216857418537`*^9}}],
+
+Cell[TextData[{
+ "\nYou\[CloseCurlyQuote]ll note that often in these worksheets I\
+\[CloseCurlyQuote]ll demonstrate \[OpenCurlyDoubleQuote]proof of concept\
+\[CloseCurlyDoubleQuote] rather than doing things the quickest and/or most \
+elegant way. Next, below, I execute the same command and give it the name ",
+ StyleBox["Otter1",
+  FontSlant->"Italic"],
+ ".\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618864100590719*^9, 3.6188641465249853`*^9}, {
+  3.618864225295412*^9, 3.618864270610631*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Otter1", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"ToCharacterCode", "[", "Plaintext1", "]"}], " ", "+", " ", 
+   "100"}]}]], "Input",
+ CellChangeTimes->{{3.618843682465222*^9, 3.618843703177169*^9}, {
+   3.6188441807707853`*^9, 3.618844185874017*^9}, 3.61890982568911*^9, {
+   3.618921692830604*^9, 3.6189216940693693`*^9}}],
+
+Cell[TextData[{
+ "\n\nHaving accomplished that, again, just to be sure, I reverse the \
+operation and show that using the command ",
+ StyleBox["FromCharacterCode",
+  FontWeight->"Bold"],
+ " in the right way will return our original string.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618864287355103*^9, 3.618864352322421*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", 
+  RowBox[{"Otter1", " ", "-", " ", "100"}], "]"}]], "Input",
+ CellChangeTimes->{{3.618844202633389*^9, 3.6188442138402767`*^9}, {
+  3.6189217005587063`*^9, 3.6189217053491993`*^9}}],
+
+Cell[TextData[{
+ "\n\nTo do the one-time pad operation, we\[CloseCurlyQuote]ll need a list of \
+",
+ StyleBox["pseudorandom",
+  FontSlant->"Italic"],
+ " integers, each of which is between 0 and 999, and the list must be exactly \
+the same length as the string. (A pseudorandom integer ",
+ StyleBox["appears",
+  FontSlant->"Italic"],
+ " to be randomly chosen, but is generated by an algorithm. Pseudorandom \
+number generators are important! Ideally, we could produce actual random \
+numbers...but that\[CloseCurlyQuote]s basically impossible.) The command ",
+ StyleBox["StringLength[",
+  FontWeight->"Bold"],
+ StyleBox["string",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ " gives the length of the string. Using that command on our plaintext \
+reveals:\n\n"
+}], "Text",
+ CellChangeTimes->{{3.6188643677804813`*^9, 3.618864507293198*^9}, {
+  3.618868760847619*^9, 3.6188688178052187`*^9}, {3.6189083987249727`*^9, 
+  3.618908485714972*^9}, {3.618910651959097*^9, 3.6189106549413652`*^9}, {
+  3.618921712036894*^9, 3.618921749507859*^9}}],
+
+Cell[BoxData[
+ RowBox[{"StringLength", "[", "Plaintext1", "]"}]], "Input",
+ CellChangeTimes->{{3.6188444857627687`*^9, 3.618844496958734*^9}}],
+
+Cell[TextData[{
+ "\n\nNext, several things happen at once in a pair of commands below that \
+are separated by a semicolon. In some sense, the command after the semicolon \
+is more important, so we\[CloseCurlyQuote]ll discuss that first.\n\n(1) The \
+command ",
+ StyleBox["RandomInteger[",
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ " returns one pseudorandom integer between 0 and n. \n\n(2) If you use ",
+ StyleBox["RandomInteger[{",
+  FontWeight->"Bold"],
+ StyleBox["m",
+  FontSlant->"Italic"],
+ StyleBox[",",
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSlant->"Italic"],
+ StyleBox["}]",
+  FontWeight->"Bold"],
+ ", then it returns one pseudorandom integer between m and n.\n\n(3) If you \
+use ",
+ StyleBox["RandomInteger[",
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSlant->"Italic"],
+ StyleBox[", ",
+  FontWeight->"Bold"],
+ StyleBox["k",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ ", then it returns k pseudorandom integers between 0 and n.\n\n(4) If you \
+use ",
+ StyleBox["RandomInteger[{",
+  FontWeight->"Bold"],
+ StyleBox["m",
+  FontSlant->"Italic"],
+ StyleBox[",",
+  FontWeight->"Bold"],
+ StyleBox["n",
+  FontSlant->"Italic"],
+ StyleBox["}, ",
+  FontWeight->"Bold"],
+ StyleBox["k",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ ", then it returns k pseudorandom integers between m and n.\n\n\nWe are \
+interested in case (3), and that is reflected in the command below; we need \
+207 pseudorandom integers between 0 and 999. HOWEVER, in the absence of user \
+input, ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " generates pseudorandom integers based on the reading of your computer\
+\[CloseCurlyQuote]s internal clock. This means that if, say, you and I wanted \
+to create one-time pads on our computers to use together, \
+we\[CloseCurlyQuote]d have to do it literally at the precise same moment. In \
+all likelihood, things would go awry, and we\[CloseCurlyQuote]d generate \
+different lists of pseudorandom integers. This would mean our one-time pad \
+was USELESS.\n\nTo combat that problem, we can both choose the same ",
+ StyleBox["seed",
+  FontSlant->"Italic"],
+ " for the pseudorandom number generator and use it whenever we need to \
+generate our one-time pad. (Remember, though, you can only use a seed once \
+before it becomes less cryptographically secure.) I took today\
+\[CloseCurlyQuote]s date 04092014 and for no good reason substituted the \
+digit \[OpenCurlyQuote]4\[CloseCurlyQuote] for the 0-digits for the day and \
+the month. The command to use a seed is ",
+ StyleBox["SeedRandom[",
+  FontWeight->"Bold"],
+ StyleBox["seed",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ ". \n\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618864520573502*^9, 3.618864687270656*^9}, {
+  3.6188647352758913`*^9, 3.618864845297291*^9}, {3.618864889496653*^9, 
+  3.618864994769001*^9}, {3.618868138188368*^9, 3.6188684238457212`*^9}, {
+  3.61886886785642*^9, 3.618868873829732*^9}, {3.618908498227062*^9, 
+  3.618908597704818*^9}, {3.618910741133998*^9, 3.618910804721902*^9}, {
+  3.618921761012155*^9, 3.6189217990753*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SeedRandom", "[", "49442014", "]"}], ";", " ", 
+  RowBox[{"RandomInteger", "[", 
+   RowBox[{"999", ",", " ", "207"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.618844803577841*^9, 3.618844914786325*^9}, 
+   3.61892181467453*^9}],
+
+Cell["\<\
+
+
+Next, because we\[CloseCurlyQuote]d like this to have a bit more flexibility, \
+rather than plugging in \[OpenCurlyQuote]207\[CloseCurlyQuote], I compose it \
+with the command that finds the string length. The list of numbers should be \
+the same, and fortunately for us, it is.
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.618868444172473*^9, 3.6188685172641897`*^9}, {
+  3.618922251743228*^9, 3.618922261999126*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SeedRandom", "[", "49442014", "]"}], ";", " ", 
+  RowBox[{"RandomInteger", "[", 
+   RowBox[{"999", ",", " ", 
+    RowBox[{"StringLength", "[", "Plaintext1", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.618844934933964*^9, 3.618844946016213*^9}, {
+   3.618847698671361*^9, 3.618847701478285*^9}, 3.618921827674293*^9}],
+
+Cell[TextData[{
+ "\n\nIt would simplify things to name the output, and accordingly it is \
+dubbed with the name ",
+ StyleBox["Rando1",
+  FontSlant->"Italic"],
+ ", which we\[CloseCurlyQuote]ll use below. Note that I had to put the name \
+in front of ",
+ StyleBox["RandomInteger",
+  FontWeight->"Bold"],
+ "; otherwise the seed is what would have been named!\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618868544609716*^9, 3.618868730247558*^9}, {
+  3.618868919907522*^9, 3.618868998153439*^9}, {3.6189110876043463`*^9, 
+  3.6189111714165277`*^9}, {3.6189222849828367`*^9, 3.6189223340855293`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SeedRandom", "[", "49442014", "]"}], ";", " ", 
+  RowBox[{"Rando1", " ", "=", " ", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"999", ",", " ", 
+     RowBox[{"StringLength", "[", "Plaintext1", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.61891091603162*^9, 3.618910925440112*^9}, {
+   3.6189109782412558`*^9, 3.6189109803596153`*^9}, 3.6189218333942223`*^9}],
+
+Cell["\<\
+
+
+Below we add the two lists: The 207 pseudorandom digits and the (ASCII + 100) \
+integers. I use the names we gave the output to keep it looking more \
+pleasant. If you prefer to see all the commands written out, then by all \
+means you should do so!
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.618911193962027*^9, 3.618911248238793*^9}, {
+  3.618922349039126*^9, 3.618922353228904*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Otter1", " ", "+", " ", "Rando1"}]], "Input",
+ CellChangeTimes->{{3.618847418640287*^9, 3.6188474243406067`*^9}, {
+   3.618847595788458*^9, 3.618847641070324*^9}, 3.6188477118944063`*^9, {
+   3.618848147810643*^9, 3.618848150758205*^9}, {3.618848238970518*^9, 
+   3.6188482506797543`*^9}, {3.6189109410823317`*^9, 3.618910942687192*^9}, {
+   3.6189110274871063`*^9, 3.618911033245001*^9}}],
+
+Cell[TextData[{
+ "\n\nThe lists above ^^^ added together beautifully, although you\
+\[CloseCurlyQuote]ll notice there are a bunch of numbers bigger than 1000. We \
+need to \[OpenCurlyQuote]mod out by 1000\[CloseCurlyQuote] to get everything \
+down to three digits. \n\n(You\[CloseCurlyQuote]ll recall in class we did \
+things modding out by 30; nothing was special or sacred about that except our \
+plaintext numbers were all under 30. Now, they\[CloseCurlyQuote]re {ASCII \
+digits + 100}, and they are all under 355. We could mod out by any number \
+larger than 355, because that would preserve the (ASCII integer + 100), which \
+is all that is required. If you like, play around with using this to mod out \
+by different numbers, both bigger than 355 and less than it to see what \
+happens!) \n\nThe command ",
+ StyleBox["Mod[",
+  FontWeight->"Bold"],
+ StyleBox["list",
+  FontSlant->"Italic"],
+ StyleBox[", n]",
+  FontWeight->"Bold"],
+ " will mod out every number in the list by n, and that\[CloseCurlyQuote]s \
+what we do below. Again, there are more elegant ways to do this, and if it \
+entertains you, by all means figure them out! I\[CloseCurlyQuote]ve parceled \
+it out this way because my hope is that it shows most clearly what is going \
+on.\n\n "
+}], "Text",
+ CellChangeTimes->{{3.6188690191379833`*^9, 3.618869099689332*^9}, {
+  3.618869217239642*^9, 3.618869411139669*^9}, {3.618869552328514*^9, 
+  3.6188695612529497`*^9}, {3.618908700167066*^9, 3.61890879733957*^9}, {
+  3.618921854689495*^9, 3.6189219435592613`*^9}, {3.61892197760649*^9, 
+  3.618921998805955*^9}, {3.618922384876912*^9, 3.618922399564287*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{
+   RowBox[{"Otter1", " ", "+", " ", "Rando1"}], ",", " ", "1000"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.618848377655837*^9, 3.618848392767643*^9}, {
+   3.618864719114696*^9, 3.618864720982225*^9}, 3.6189112757559633`*^9, 
+   3.618921844521863*^9}],
+
+Cell["\<\
+
+It\[CloseCurlyQuote]s easy enough to see that we got what we needed, and that \
+it is exactly the ciphertext we need to send! We took the plaintext, \
+converted it to ASCII integers, added 100 to get them all between 0 and 999. \
+Then we created a stream of three-digit pseudorandom integers, added those to \
+the ASCII integers, and modded out by 1000. That is the ciphertext. Below, we \
+give it the name \[OpenCurlyQuote]TransMit1.\[CloseCurlyQuote]
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.618869430594981*^9, 3.618869536906493*^9}, {
+  3.618869568987986*^9, 3.618869619810107*^9}, {3.618908827474361*^9, 
+  3.6189088277543783`*^9}, {3.6189220099680233`*^9, 3.618922029093017*^9}}],
+
+Cell[BoxData[
+ RowBox[{"TransMit1", " ", "=", " ", 
+  RowBox[{"Mod", "[", 
+   RowBox[{
+    RowBox[{"Otter1", " ", "+", " ", "Rando1"}], ",", " ", "1000"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.618848428051827*^9, 3.618848458412731*^9}, 
+   3.618909185577701*^9, 3.618911296954035*^9, 3.61892195244921*^9}],
+
+Cell[TextData[{
+ "\n\nNow that it\[CloseCurlyQuote]s been transmitted and received, we need \
+to decrypt the ciphertext. To do that, we need to take it, ",
+ StyleBox["subtract",
+  FontSlant->"Italic"],
+ " the pseudorandom digits, and mod out again by 1000. \n\nFirst, the person \
+receiving the ciphertext needs to know how long the list of integers is. The \
+command ",
+ StyleBox["Length[",
+  FontWeight->"Bold"],
+ StyleBox["list",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ " gives the length of the list, so you\[CloseCurlyQuote]ll see ",
+ StyleBox["Length[",
+  FontWeight->"Bold"],
+ StyleBox["Transmit1",
+  FontSlant->"Italic"],
+ StyleBox["]",
+  FontWeight->"Bold"],
+ " composed in the command below.\n\n\n"
+}], "Text",
+ CellChangeTimes->{{3.61886963293069*^9, 3.618869881301165*^9}, {
+   3.618908914496696*^9, 3.618909006925909*^9}, {3.618910049837288*^9, 
+   3.6189102113444233`*^9}, {3.618911391659152*^9, 3.618911392555171*^9}, 
+   3.6189219579586773`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"SeedRandom", "[", "49442014", "]"}], ";", " ", 
+    RowBox[{"TransMit1", "-", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"999", ",", " ", 
+       StyleBox[
+        RowBox[{"Length", "[", "TransMit1", "]"}],
+        FontWeight->"Bold"]}], 
+      StyleBox["]",
+       FontWeight->"Bold"]}]}]}], ",", "1000"}], "]"}]], "Input",
+ CellChangeTimes->{{3.618870268246797*^9, 3.618870304549006*^9}, 
+   3.618870512074082*^9, 3.618870708002244*^9, {3.618871097299575*^9, 
+   3.618871099038711*^9}, 3.618871153501405*^9, 3.618871192796248*^9, {
+   3.618909029913288*^9, 3.618909036142742*^9}, {3.618909097831767*^9, 
+   3.6189090981722383`*^9}, 3.618909203772339*^9, {3.618911345770812*^9, 
+   3.618911355533128*^9}, {3.6189220447992268`*^9, 3.618922047909732*^9}}],
+
+Cell[TextData[{
+ "\n\nThe output above shows that it worked the way we want, so for kicks and \
+giggles, we give it a name ",
+ StyleBox["Dcrip1",
+  FontSlant->"Italic"],
+ " and then convert it back to the original string. All this can be done \
+without naming outputs and just simply composing the commands...personally \
+that\[CloseCurlyQuote]s my preference, but I thought it perhaps more \
+confusing. I include one way to do it after the successful decryption.\n\n"
+}], "Text",
+ CellChangeTimes->{{3.618869901972343*^9, 3.618870076468951*^9}, 
+   3.618911399219034*^9, {3.618922060238388*^9, 3.618922075195754*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Dcrip1", " ", "=", " ", 
+  RowBox[{"Mod", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "49442014", "]"}], ";", " ", 
+     RowBox[{"TransMit1", "-", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"999", ",", " ", 
+        StyleBox[
+         RowBox[{"Length", "[", "TransMit1", "]"}],
+         FontWeight->"Bold"]}], 
+       StyleBox["]",
+        FontWeight->"Bold"]}]}]}], ",", "1000"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.618848610429793*^9, 3.618848616806385*^9}, {
+   3.618848659201317*^9, 3.618848661731906*^9}, 3.618848782975946*^9, {
+   3.61884889179146*^9, 3.618848897549089*^9}, 3.6189097977801*^9, 
+   3.6189102929231043`*^9, 3.618911425902508*^9, {3.618922083509626*^9, 
+   3.618922085667964*^9}}],
+
+Cell["\<\
+
+
+And now to convert the (ASCII integers + 100) back to plaintext:
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.618911471737932*^9, 3.618911501024394*^9}, {
+  3.6189220931472607`*^9, 3.618922095723885*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", 
+  RowBox[{"Dcrip1", " ", "-", " ", "100"}], "]"}]], "Input",
+ CellChangeTimes->{{3.618849012524251*^9, 3.6188490273262367`*^9}, {
+  3.6189221011795387`*^9, 3.6189221073313007`*^9}}],
+
+Cell["\<\
+
+
+Above, success! 
+
+Below, the decryption in one command:
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.6188701496182337`*^9, 3.618870174375112*^9}, {
+  3.618870763753306*^9, 3.618870766281352*^9}, {3.618911793383149*^9, 
+  3.6189117984250174`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", 
+  RowBox[{
+   RowBox[{"Mod", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"SeedRandom", "[", "49442014", "]"}], ";", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{"TransMit1", "-", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"999", ",", " ", 
+         StyleBox[
+          RowBox[{"Length", "[", "TransMit1", "]"}],
+          FontWeight->"Bold"]}], "]"}]}]}], ",", "1000"}], "]"}], " ", "-", 
+   " ", "100"}], "]"}]], "Input",
+ CellChangeTimes->{{3.618870118446493*^9, 3.618870131623242*^9}, 
+   3.618910306354233*^9, {3.6189115323241167`*^9, 3.618911541001981*^9}, {
+   3.618922114797307*^9, 3.6189221244110327`*^9}}],
+
+Cell["\<\
+
+
+It\[CloseCurlyQuote]d be equally straightforward to compose all of the \
+encryption commands into one command, too. It\[CloseCurlyQuote]d be good \
+practice to try and figure it out. Do it! Do it! Do it!
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.618870607272428*^9, 3.618870625997532*^9}, {
+  3.618870741363855*^9, 3.6188707544638157`*^9}, {3.6188708807535067`*^9, 
+  3.618871050403255*^9}, {3.618910310607373*^9, 3.618910333421152*^9}}],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.618848109420911*^9, 3.6188481797971363`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1208, 1032},
+WindowMargins->{{134, Automatic}, {Automatic, 0}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 127, 2, 137, "Title"],
+Cell[710, 26, 1242, 26, 282, "Text"],
+Cell[1955, 54, 431, 7, 119, "Input"],
+Cell[2389, 63, 1273, 20, 400, "Text"],
+Cell[3665, 85, 164, 3, 43, "Input"],
+Cell[3832, 90, 934, 24, 282, "Text"],
+Cell[4769, 116, 432, 9, 144, "Input"],
+Cell[5204, 127, 856, 15, 312, "Text"],
+Cell[6063, 144, 151, 3, 43, "Input"],
+Cell[6217, 149, 270, 7, 164, "Text"],
+Cell[6490, 158, 151, 3, 43, "Input"],
+Cell[6644, 163, 266, 7, 164, "Text"],
+Cell[6913, 172, 138, 2, 43, "Input"],
+Cell[7054, 176, 1075, 25, 341, "Text"],
+Cell[8132, 203, 427, 7, 119, "Input"],
+Cell[8562, 212, 463, 11, 194, "Text"],
+Cell[9028, 225, 198, 3, 43, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9263, 233, 185, 7, 303, "Title"],
+Cell[9451, 242, 1483, 29, 459, "Text"],
+Cell[10937, 273, 183, 4, 43, "Input"],
+Cell[11123, 279, 492, 10, 164, "Text"],
+Cell[11618, 291, 346, 7, 43, "Input"],
+Cell[11967, 300, 322, 7, 194, "Text"],
+Cell[12292, 309, 231, 4, 43, "Input"],
+Cell[12526, 315, 1055, 24, 282, "Text"],
+Cell[13584, 341, 142, 2, 43, "Input"],
+Cell[13729, 345, 3146, 84, 843, "Text"],
+Cell[16878, 431, 262, 6, 43, "Input"],
+Cell[17143, 439, 423, 11, 194, "Text"],
+Cell[17569, 452, 357, 7, 43, "Input"],
+Cell[17929, 461, 590, 13, 223, "Text"],
+Cell[18522, 476, 403, 8, 43, "Input"],
+Cell[18928, 486, 392, 11, 223, "Text"],
+Cell[19323, 499, 413, 6, 43, "Input"],
+Cell[19739, 507, 1627, 28, 489, "Text"],
+Cell[21369, 537, 300, 7, 43, "Input"],
+Cell[21672, 546, 693, 13, 223, "Text"],
+Cell[22368, 561, 313, 7, 43, "Input"],
+Cell[22684, 570, 984, 26, 312, "Text"],
+Cell[23671, 598, 834, 18, 69, "Input"],
+Cell[24508, 618, 618, 11, 253, "Text"],
+Cell[25129, 631, 760, 18, 69, "Input"],
+Cell[25892, 651, 209, 8, 164, "Text"],
+Cell[26104, 661, 231, 4, 43, "Input"],
+Cell[26338, 667, 251, 11, 223, "Text"],
+Cell[26592, 680, 684, 17, 69, "Input"],
+Cell[27279, 699, 445, 11, 194, "Text"],
+Cell[27727, 712, 26, 0, 43, "Input"],
+Cell[27756, 714, 94, 1, 43, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
