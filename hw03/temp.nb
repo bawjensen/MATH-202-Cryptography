@@ -1,0 +1,1261 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     38316,       1252]
+NotebookOptionsPosition[     36670,       1190]
+NotebookOutlinePosition[     37022,       1206]
+CellTagsIndexPosition[     36979,       1203]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ToCharacterCode", "[", 
+  RowBox[{
+  "The", " ", "mole", " ", "lives", " ", "in", " ", "Manhattan", " ", "and", 
+   " ", "plays", " ", "for", " ", "the", " ", 
+   RowBox[{"Yankees", "."}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.619288812821711*^9, 3.6192888281364193`*^9}},
+ EmphasizeSyntaxErrors->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ToCharacterCode", "[", 
+   RowBox[{
+   "The", " ", "mole", " ", "lives", " ", "in", " ", "Manhattan", " ", "and", 
+    " ", "plays", " ", "for", " ", "the", " ", "Yankees"}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.619288841739683*^9, 3.6192888497598658`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ToCharacterCode", "::", "strse"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String or list of strings expected at position \
+\[NoBreak]\\!\\(1\\)\[NoBreak] in \[NoBreak]\\!\\(ToCharacterCode[\\(\\(and\\\
+\\ for\\\\ in\\\\ lives\\\\ Manhattan\\\\ mole\\\\ plays\\\\ the\\\\ The\\\\ \
+Yankees\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/strse\\\", ButtonNote -> \
+\\\"ToCharacterCode::strse\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.619288852477407*^9}],
+
+Cell[BoxData[
+ RowBox[{"ToCharacterCode", "[", 
+  RowBox[{
+  "and", " ", "for", " ", "in", " ", "lives", " ", "Manhattan", " ", "mole", 
+   " ", "plays", " ", "the", " ", "The", " ", "Yankees"}], "]"}]], "Output",
+ CellChangeTimes->{3.61928885247875*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "ToCharacterCode", "[", 
+   "\"\<The mole lives in Manhattan and plays for the Yankees.\>\"", "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.619288855897497*^9, 3.6192888619837637`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "84", ",", "104", ",", "101", ",", "32", ",", "109", ",", "111", ",", "108",
+    ",", "101", ",", "32", ",", "108", ",", "105", ",", "118", ",", "101", 
+   ",", "115", ",", "32", ",", "105", ",", "110", ",", "32", ",", "77", ",", 
+   "97", ",", "110", ",", "104", ",", "97", ",", "116", ",", "116", ",", "97",
+    ",", "110", ",", "32", ",", "97", ",", "110", ",", "100", ",", "32", ",", 
+   "112", ",", "108", ",", "97", ",", "121", ",", "115", ",", "32", ",", 
+   "102", ",", "111", ",", "114", ",", "32", ",", "116", ",", "104", ",", 
+   "101", ",", "32", ",", "89", ",", "97", ",", "110", ",", "107", ",", "101",
+    ",", "101", ",", "115", ",", "46"}], "}"}]], "Output",
+ CellChangeTimes->{3.619288863485057*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"%", " ", "+", " ", "100"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.619288868106649*^9, 3.6192888709995193`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "184", ",", "204", ",", "201", ",", "132", ",", "209", ",", "211", ",", 
+   "208", ",", "201", ",", "132", ",", "208", ",", "205", ",", "218", ",", 
+   "201", ",", "215", ",", "132", ",", "205", ",", "210", ",", "132", ",", 
+   "177", ",", "197", ",", "210", ",", "204", ",", "197", ",", "216", ",", 
+   "216", ",", "197", ",", "210", ",", "132", ",", "197", ",", "210", ",", 
+   "200", ",", "132", ",", "212", ",", "208", ",", "197", ",", "221", ",", 
+   "215", ",", "132", ",", "202", ",", "211", ",", "214", ",", "132", ",", 
+   "216", ",", "204", ",", "201", ",", "132", ",", "189", ",", "197", ",", 
+   "210", ",", "207", ",", "201", ",", "201", ",", "215", ",", "146"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.6192888722761497`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{"%", ",", " ", "16"}], "]"}]], "Input",
+ CellChangeTimes->{{3.619288877311077*^9, 3.6192889149629908`*^9}, 
+   3.6192889630720587`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    InterpretationBox[
+     SubscriptBox["\<\"b8\"\>", "\<\"16\"\>"],
+     184,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"cc\"\>", "\<\"16\"\>"],
+     204,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c9\"\>", "\<\"16\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d1\"\>", "\<\"16\"\>"],
+     209,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d3\"\>", "\<\"16\"\>"],
+     211,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d0\"\>", "\<\"16\"\>"],
+     208,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c9\"\>", "\<\"16\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d0\"\>", "\<\"16\"\>"],
+     208,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"cd\"\>", "\<\"16\"\>"],
+     205,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"da\"\>", "\<\"16\"\>"],
+     218,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c9\"\>", "\<\"16\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d7\"\>", "\<\"16\"\>"],
+     215,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"cd\"\>", "\<\"16\"\>"],
+     205,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d2\"\>", "\<\"16\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"b1\"\>", "\<\"16\"\>"],
+     177,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c5\"\>", "\<\"16\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d2\"\>", "\<\"16\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"cc\"\>", "\<\"16\"\>"],
+     204,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c5\"\>", "\<\"16\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d8\"\>", "\<\"16\"\>"],
+     216,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d8\"\>", "\<\"16\"\>"],
+     216,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c5\"\>", "\<\"16\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d2\"\>", "\<\"16\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c5\"\>", "\<\"16\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d2\"\>", "\<\"16\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c8\"\>", "\<\"16\"\>"],
+     200,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d4\"\>", "\<\"16\"\>"],
+     212,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d0\"\>", "\<\"16\"\>"],
+     208,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c5\"\>", "\<\"16\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"dd\"\>", "\<\"16\"\>"],
+     221,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d7\"\>", "\<\"16\"\>"],
+     215,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"ca\"\>", "\<\"16\"\>"],
+     202,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d3\"\>", "\<\"16\"\>"],
+     211,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d6\"\>", "\<\"16\"\>"],
+     214,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d8\"\>", "\<\"16\"\>"],
+     216,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"cc\"\>", "\<\"16\"\>"],
+     204,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c9\"\>", "\<\"16\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"84\"\>", "\<\"16\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"bd\"\>", "\<\"16\"\>"],
+     189,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c5\"\>", "\<\"16\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d2\"\>", "\<\"16\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"cf\"\>", "\<\"16\"\>"],
+     207,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c9\"\>", "\<\"16\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"c9\"\>", "\<\"16\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"d7\"\>", "\<\"16\"\>"],
+     215,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"92\"\>", "\<\"16\"\>"],
+     146,
+     Editable->False]}], "}"}],
+  BaseForm[#, 16]& ]], "Output",
+ CellChangeTimes->{3.619288915940124*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{"%", ",", " ", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6192889230093393`*^9, 3.6192889286061697`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    InterpretationBox[
+     SubscriptBox["\<\"10111000\"\>", "\<\"2\"\>"],
+     184,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001100\"\>", "\<\"2\"\>"],
+     204,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001001\"\>", "\<\"2\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010001\"\>", "\<\"2\"\>"],
+     209,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010011\"\>", "\<\"2\"\>"],
+     211,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010000\"\>", "\<\"2\"\>"],
+     208,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001001\"\>", "\<\"2\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010000\"\>", "\<\"2\"\>"],
+     208,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001101\"\>", "\<\"2\"\>"],
+     205,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11011010\"\>", "\<\"2\"\>"],
+     218,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001001\"\>", "\<\"2\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010111\"\>", "\<\"2\"\>"],
+     215,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001101\"\>", "\<\"2\"\>"],
+     205,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010010\"\>", "\<\"2\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10110001\"\>", "\<\"2\"\>"],
+     177,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11000101\"\>", "\<\"2\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010010\"\>", "\<\"2\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001100\"\>", "\<\"2\"\>"],
+     204,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11000101\"\>", "\<\"2\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11011000\"\>", "\<\"2\"\>"],
+     216,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11011000\"\>", "\<\"2\"\>"],
+     216,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11000101\"\>", "\<\"2\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010010\"\>", "\<\"2\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11000101\"\>", "\<\"2\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010010\"\>", "\<\"2\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001000\"\>", "\<\"2\"\>"],
+     200,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010100\"\>", "\<\"2\"\>"],
+     212,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010000\"\>", "\<\"2\"\>"],
+     208,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11000101\"\>", "\<\"2\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11011101\"\>", "\<\"2\"\>"],
+     221,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010111\"\>", "\<\"2\"\>"],
+     215,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001010\"\>", "\<\"2\"\>"],
+     202,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010011\"\>", "\<\"2\"\>"],
+     211,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010110\"\>", "\<\"2\"\>"],
+     214,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11011000\"\>", "\<\"2\"\>"],
+     216,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001100\"\>", "\<\"2\"\>"],
+     204,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001001\"\>", "\<\"2\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10000100\"\>", "\<\"2\"\>"],
+     132,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10111101\"\>", "\<\"2\"\>"],
+     189,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11000101\"\>", "\<\"2\"\>"],
+     197,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010010\"\>", "\<\"2\"\>"],
+     210,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001111\"\>", "\<\"2\"\>"],
+     207,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001001\"\>", "\<\"2\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11001001\"\>", "\<\"2\"\>"],
+     201,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"11010111\"\>", "\<\"2\"\>"],
+     215,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"10010010\"\>", "\<\"2\"\>"],
+     146,
+     Editable->False]}], "}"}],
+  BaseForm[#, 2]& ]], "Output",
+ CellChangeTimes->{3.619288929169736*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TransMit1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "113", ",", "148", ",", "268", ",", "71", ",", "105", ",", "485", ",", 
+     "17", ",", "96", ",", "682", ",", "499", ",", "153", ",", "213", ",", 
+     "338", ",", "181", ",", "263", ",", "218", ",", "647", ",", "29", ",", 
+     "197", ",", "512", ",", "968", ",", "966", ",", "570", ",", "144", ",", 
+     "547", ",", "412", ",", "628", ",", "307", ",", "874", ",", "468", ",", 
+     "255", ",", "353", ",", "46", ",", "200", ",", "614", ",", "230", ",", 
+     "506", ",", "249", ",", "36", ",", "208", ",", "74", ",", "632", ",", 
+     "712", ",", "38", ",", "699", ",", "742", ",", "473", ",", "322", ",", 
+     "365", ",", "868", ",", "700", ",", "175", ",", "1", ",", "206", ",", 
+     "399", ",", "579", ",", "793", ",", "657", ",", "743", ",", "476", ",", 
+     "906", ",", "823", ",", "343", ",", "18", ",", "994", ",", "826", ",", 
+     "360", ",", "79", ",", "967", ",", "711", ",", "192", ",", "545", ",", 
+     "110", ",", "162", ",", "426", ",", "461", ",", "141", ",", "677", ",", 
+     "266", ",", "216", ",", "537", ",", "740", ",", "181", ",", "155", ",", 
+     "698", ",", "177", ",", "269", ",", "404", ",", "336", ",", "574", ",", 
+     "689", ",", "404", ",", "559", ",", "437", ",", "284", ",", "72", ",", 
+     "667", ",", "464", ",", "12", ",", "679", ",", "959", ",", "158", ",", 
+     "419", ",", "23", ",", "316", ",", "349", ",", "423", ",", "869", ",", 
+     "508", ",", "199", ",", "375", ",", "584", ",", "965", ",", "19", ",", 
+     "722", ",", "494", ",", "355", ",", "988", ",", "720", ",", "698", ",", 
+     "354", ",", "259", ",", "182", ",", "485", ",", "75", ",", "482", ",", 
+     "305", ",", "160", ",", "621", ",", "459", ",", "932", ",", "304", ",", 
+     "275"}], "}"}]}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6192892980423393`*^9, 3.619289350721895*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "113", ",", "148", ",", "268", ",", "71", ",", "105", ",", "485", ",", "17",
+    ",", "96", ",", "682", ",", "499", ",", "153", ",", "213", ",", "338", 
+   ",", "181", ",", "263", ",", "218", ",", "647", ",", "29", ",", "197", ",",
+    "512", ",", "968", ",", "966", ",", "570", ",", "144", ",", "547", ",", 
+   "412", ",", "628", ",", "307", ",", "874", ",", "468", ",", "255", ",", 
+   "353", ",", "46", ",", "200", ",", "614", ",", "230", ",", "506", ",", 
+   "249", ",", "36", ",", "208", ",", "74", ",", "632", ",", "712", ",", "38",
+    ",", "699", ",", "742", ",", "473", ",", "322", ",", "365", ",", "868", 
+   ",", "700", ",", "175", ",", "1", ",", "206", ",", "399", ",", "579", ",", 
+   "793", ",", "657", ",", "743", ",", "476", ",", "906", ",", "823", ",", 
+   "343", ",", "18", ",", "994", ",", "826", ",", "360", ",", "79", ",", 
+   "967", ",", "711", ",", "192", ",", "545", ",", "110", ",", "162", ",", 
+   "426", ",", "461", ",", "141", ",", "677", ",", "266", ",", "216", ",", 
+   "537", ",", "740", ",", "181", ",", "155", ",", "698", ",", "177", ",", 
+   "269", ",", "404", ",", "336", ",", "574", ",", "689", ",", "404", ",", 
+   "559", ",", "437", ",", "284", ",", "72", ",", "667", ",", "464", ",", 
+   "12", ",", "679", ",", "959", ",", "158", ",", "419", ",", "23", ",", 
+   "316", ",", "349", ",", "423", ",", "869", ",", "508", ",", "199", ",", 
+   "375", ",", "584", ",", "965", ",", "19", ",", "722", ",", "494", ",", 
+   "355", ",", "988", ",", "720", ",", "698", ",", "354", ",", "259", ",", 
+   "182", ",", "485", ",", "75", ",", "482", ",", "305", ",", "160", ",", 
+   "621", ",", "459", ",", "932", ",", "304", ",", "275"}], "}"}]], "Output",
+ CellChangeTimes->{3.61928935330663*^9, 3.6193404040373993`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", 
+  RowBox[{
+   RowBox[{"Mod", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"SeedRandom", "[", "888179171097998121512777", "]"}], ";", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{"TransMit1", "-", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"999", ",", " ", 
+         StyleBox[
+          RowBox[{"Length", "[", "TransMit1", "]"}],
+          FontWeight->"Bold"]}], "]"}]}]}], ",", "1000"}], "]"}], " ", "-", 
+   " ", "100"}], "]"}]], "Input",
+ CellChangeTimes->{3.619289373819338*^9}],
+
+Cell[BoxData["\<\"The secret stuff is really secret. I tried to uncover the \
+secret, but they were so secretive about their secrets that I failed again.\"\
+\>"], "Output",
+ CellChangeTimes->{3.6192893769674473`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ToCharacterCode", "[", 
+  "\"\<The mole lives in Manhattan and plays for the Yankees.\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.619340312622506*^9, 3.619340313494574*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "84", ",", "104", ",", "101", ",", "32", ",", "109", ",", "111", ",", "108",
+    ",", "101", ",", "32", ",", "108", ",", "105", ",", "118", ",", "101", 
+   ",", "115", ",", "32", ",", "105", ",", "110", ",", "32", ",", "77", ",", 
+   "97", ",", "110", ",", "104", ",", "97", ",", "116", ",", "116", ",", "97",
+    ",", "110", ",", "32", ",", "97", ",", "110", ",", "100", ",", "32", ",", 
+   "112", ",", "108", ",", "97", ",", "121", ",", "115", ",", "32", ",", 
+   "102", ",", "111", ",", "114", ",", "32", ",", "116", ",", "104", ",", 
+   "101", ",", "32", ",", "89", ",", "97", ",", "110", ",", "107", ",", "101",
+    ",", "101", ",", "115", ",", "46"}], "}"}]], "Output",
+ CellChangeTimes->{3.6193403139003067`*^9}]
+}, Open  ]],
+
+Cell["\<\
+1. Convert the message \[OpenCurlyDoubleQuote]The mole lives in Manhattan and \
+plays for the Yankees.\[CloseCurlyDoubleQuote] into character code + 100, and \
+convert to binary.\
+\>", "Text",
+ CellChangeTimes->{{3.619340514632909*^9, 3.619340536295086*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{"%", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6193403175216103`*^9, 3.61934033072716*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    InterpretationBox[
+     SubscriptBox["\<\"1010100\"\>", "\<\"2\"\>"],
+     84,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101101\"\>", "\<\"2\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101111\"\>", "\<\"2\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110110\"\>", "\<\"2\"\>"],
+     118,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101001\"\>", "\<\"2\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1001101\"\>", "\<\"2\"\>"],
+     77,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110100\"\>", "\<\"2\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110100\"\>", "\<\"2\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100100\"\>", "\<\"2\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110000\"\>", "\<\"2\"\>"],
+     112,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101100\"\>", "\<\"2\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1111001\"\>", "\<\"2\"\>"],
+     121,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100110\"\>", "\<\"2\"\>"],
+     102,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101111\"\>", "\<\"2\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110010\"\>", "\<\"2\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110100\"\>", "\<\"2\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101000\"\>", "\<\"2\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"100000\"\>", "\<\"2\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1011001\"\>", "\<\"2\"\>"],
+     89,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100001\"\>", "\<\"2\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101110\"\>", "\<\"2\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1101011\"\>", "\<\"2\"\>"],
+     107,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1100101\"\>", "\<\"2\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"1110011\"\>", "\<\"2\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"101110\"\>", "\<\"2\"\>"],
+     46,
+     Editable->False]}], "}"}],
+  BaseForm[#, 2]& ]], "Output",
+ CellChangeTimes->{3.619340331171795*^9}]
+}, Open  ]],
+
+Cell["\<\
+2. Convert the same message as above with the same method, but this time into \
+hexadecimal.\
+\>", "Text",
+ CellChangeTimes->{{3.619340546376451*^9, 3.619340567086665*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BaseForm", "[", 
+  RowBox[{"%", ",", " ", "16"}], "]"}]], "Input",
+ CellChangeTimes->{{3.619340333434162*^9, 3.6193403411355057`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    InterpretationBox[
+     SubscriptBox["\<\"54\"\>", "\<\"16\"\>"],
+     84,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6d\"\>", "\<\"16\"\>"],
+     109,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6f\"\>", "\<\"16\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"76\"\>", "\<\"16\"\>"],
+     118,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"69\"\>", "\<\"16\"\>"],
+     105,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"4d\"\>", "\<\"16\"\>"],
+     77,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"74\"\>", "\<\"16\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"74\"\>", "\<\"16\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"64\"\>", "\<\"16\"\>"],
+     100,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"70\"\>", "\<\"16\"\>"],
+     112,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6c\"\>", "\<\"16\"\>"],
+     108,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"79\"\>", "\<\"16\"\>"],
+     121,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"66\"\>", "\<\"16\"\>"],
+     102,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6f\"\>", "\<\"16\"\>"],
+     111,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"72\"\>", "\<\"16\"\>"],
+     114,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"74\"\>", "\<\"16\"\>"],
+     116,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"68\"\>", "\<\"16\"\>"],
+     104,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"20\"\>", "\<\"16\"\>"],
+     32,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"59\"\>", "\<\"16\"\>"],
+     89,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"61\"\>", "\<\"16\"\>"],
+     97,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6e\"\>", "\<\"16\"\>"],
+     110,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"6b\"\>", "\<\"16\"\>"],
+     107,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"65\"\>", "\<\"16\"\>"],
+     101,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"73\"\>", "\<\"16\"\>"],
+     115,
+     Editable->False], ",", 
+    InterpretationBox[
+     SubscriptBox["\<\"2e\"\>", "\<\"16\"\>"],
+     46,
+     Editable->False]}], "}"}],
+  BaseForm[#, 16]& ]], "Output",
+ CellChangeTimes->{3.6193403414669523`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "3. Using the seed 888179171097998121512777 for ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\[CloseCurlyQuote]s random number generation, decrypt the given character \
+code list which has been encrypted using the same random-number-based key."
+}], "Text",
+ CellChangeTimes->{{3.619340576583021*^9, 3.619340606796934*^9}, {
+  3.619340659387713*^9, 3.619340690083115*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FromCharacterCode", "[", 
+  RowBox[{
+   RowBox[{"Mod", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"SeedRandom", "[", "888179171097998121512777", "]"}], ";", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{"TransMit1", "-", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"999", ",", " ", 
+         StyleBox[
+          RowBox[{"Length", "[", "TransMit1", "]"}],
+          FontWeight->"Bold"]}], "]"}]}]}], ",", "1000"}], "]"}], " ", "-", 
+   " ", "100"}], "]"}]], "Input"],
+
+Cell[BoxData["\<\"The secret stuff is really secret. I tried to uncover the \
+secret, but they were so secretive about their secrets that I failed again.\"\
+\>"], "Output",
+ CellChangeTimes->{3.619340370396371*^9, 3.619340408840047*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 668},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 329, 7, 28, "Input"],
+Cell[CellGroupData[{
+Cell[912, 31, 322, 7, 46, "Input"],
+Cell[1237, 40, 634, 12, 41, "Message"],
+Cell[1874, 54, 254, 5, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2165, 64, 243, 6, 46, "Input"],
+Cell[2411, 72, 759, 12, 63, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3207, 89, 165, 3, 46, "Input"],
+Cell[3375, 94, 783, 13, 63, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4195, 112, 186, 4, 28, "Input"],
+Cell[4384, 118, 6014, 221, 80, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10435, 344, 159, 3, 28, "Input"],
+Cell[10597, 349, 6283, 221, 131, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16917, 575, 1916, 28, 182, "Input"],
+Cell[18836, 605, 1784, 25, 148, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20657, 635, 550, 15, 46, "Input"],
+Cell[21210, 652, 216, 3, 46, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21463, 660, 201, 4, 28, "Input"],
+Cell[21667, 666, 761, 12, 63, "Output"]
+}, Open  ]],
+Cell[22443, 681, 268, 5, 49, "Text"],
+Cell[CellGroupData[{
+Cell[22736, 690, 151, 3, 28, "Input"],
+Cell[22890, 695, 6200, 221, 159, "Output"]
+}, Open  ]],
+Cell[29105, 919, 182, 4, 30, "Text"],
+Cell[CellGroupData[{
+Cell[29312, 927, 158, 3, 28, "Input"],
+Cell[29473, 932, 5997, 221, 91, "Output"]
+}, Open  ]],
+Cell[35485, 1156, 397, 8, 49, "Text"],
+Cell[CellGroupData[{
+Cell[35907, 1168, 508, 14, 46, "Input"],
+Cell[36418, 1184, 236, 3, 46, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
